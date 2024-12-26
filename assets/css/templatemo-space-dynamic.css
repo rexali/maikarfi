@@ -950,11 +950,11 @@ About Us Style
 
 .about-us {
   /* background-image: url(../images/about-bg.png); */
-  background-image: url(../images/maikarfi-background.png);
+  background-image: url('../images/maikarfi-background.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 140px 0px 120px 0px;
+  padding: 70px 0px 60px 0px;
 }
 
 .about-us .left-image {
@@ -994,7 +994,7 @@ Services Style
 
 .our-services {
   margin-top: 0px;
-  padding-top: 60px;
+  padding-top: 20px;
 }
 
 .our-services .left-image {
@@ -1002,7 +1002,7 @@ Services Style
 }
 
 .our-services .section-heading h2 {
-  margin-right: 100px;
+  margin-top: 1px;
 }
 
 .our-services .section-heading p {
@@ -1082,14 +1082,14 @@ Portfolio
 */
 
 .our-portfolio {
-  padding-top: 60px;
+  padding-top: 20px;
   margin-top: 0px;
 }
 
 .our-portfolio .section-heading h2 {
   text-align: center;
-  margin: 0px 90px 0px 90px;
-  margin-bottom: 14px;
+  margin: 0px 15px 0px 15px;
+  margin-bottom: 0px;
   position: relative;
   z-index: 1;
 }
@@ -1513,7 +1513,7 @@ responsive
     text-align: center;
   }
   .our-portfolio .section-heading h2 {
-    margin: 0px 0px 80px 0px;
+    margin: 0px 0px 20px 0px;
   }
   .our-portfolio .item {
     margin-bottom: 15px;

@@ -118,12 +118,17 @@
   <div id="about" class="about-us section">
     <div class="container">
       <div class="row">
+        <div class="col-lg-4 align-self-end">
+          <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+            <a href="./service.html">
+              <img src="assets/images/maikarfi-metal-work-3.jpeg" alt="person graphic" style="border-radius: 20px;">
+            </a>
+          </div><br>
+        </div>
 
         <div class="col-lg-8 align-self-center">
           <div class="services">
-
             <div class="row">
-
               <div class="col-lg-6">
                 <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
                   <div class="icon">
@@ -176,15 +181,6 @@
             </div>
           </div>
         </div>
-
-        <div class="col-lg-4 align-self-end">
-          <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-            <a href="./service.html">
-              <img src="assets/images/maikarfi-metal-work-3.jpeg" alt="person graphic" style="border-radius: 20px;">
-            </a>
-          </div>
-        </div>
-
       </div>
     </div>
   </div>
@@ -200,11 +196,11 @@
   <div id="services" class="our-services section">
     <div class="container">
       <div class="row mb-5">
-        <div class="section-headingm wow bounceIn text-center" data-wow-duration="1s" data-wow-delay="0.2s">
+        <div class="section-heading wow bounceIn text-center" data-wow-duration="1s" data-wow-delay="0.2s">
           <h2>Our Services</h2>
-          <h4>What we offer</h4>
+          <h5>What we offer</h5>
         </div>
-      </div><br><br>
+      </div>
 
       <div class="row">
 
@@ -260,14 +256,12 @@
 
       <div class="row">
         <div class="section-heading wow bounceIn text-center" data-wow-duration="1s" data-wow-delay="0.2s">
-          <!-- <h2>Our Portfolio &amp; What We <span>Provide</span></h2> -->
           <h2>Our Portfolio</h2>
-          <h4>What we have done</h4>
+          <h5>What we have done</h5><br>
         </div>
-      </div><br><br>
+      </div>
 
       <div class="row">
-
         <div class="col-lg-3 col-sm-6">
           <a href="#">
             <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
@@ -347,7 +341,7 @@
         <div class="section-heading  wow bounceIn text-center" data-wow-duration="1s" data-wow-delay="0.2s">
           <!-- <h2>Our Portfolio &amp; What We <span>Provide</span></h2> -->
           <h2>Our Gallery</h2>
-          <h4>Our photos</h4>
+          <h5>Our photos</h5>
         </div>
       </div><br><br>
 
@@ -382,7 +376,7 @@
         <div class="section-heading  wow bounceIn text-center" data-wow-duration="1s" data-wow-delay="0.2s">
           <!-- <h2>Our Portfolio &amp; What We <span>Provide</span></h2> -->
           <h2>Our Products and Prices</h2>
-          <h4>What we produce and their prices</h4>
+          <h5>What we produce and their prices</h5>
         </div>
       </div><br><br>
 
@@ -466,7 +460,7 @@
         <div class="section-heading wow bounceIn text-center" data-wow-duration="1s" data-wow-delay="0.2s">
           <!-- <h2>Our <em>Trending</em> Projects <span>and Works</span></h2><br><br><br> -->
           <h2>Our Blog</h2>
-          <h4>Our latest updates, trending projects and works</h4>
+          <h5>Our latest updates, trending projects and works</h5>
         </div>
       </div><br><br>
 
@@ -541,7 +535,7 @@
       <div class="row">
         <div class="section-heading  wow bounceIn text-center" data-wow-duration="1s" data-wow-delay="0.2s">
           <h2>Contact Us</h2>
-          <h4>Send us a message about your projects</h4>
+          <h5>Send us a message about your projects</h5>
         </div>
       </div><br><br>
 
@@ -571,7 +565,7 @@
                 <fieldset>
                   <input type="text" name="subject" id="subject" placeholder="Subject" autocomplete="on" required>
                 </fieldset>
-              </div>
+              </div> 
               <div class="col-lg-12">
                 <fieldset>
                   <textarea name="body" type="text" class="form-control" id="bodymess" placeholder="Message"
@@ -580,7 +574,8 @@
               </div>
               <div class="col-lg-12" style="text-align: right;">
                 <fieldset>
-                  <a type="button" id="form-submit" class="main-button" onclick="sendMessage()">Send Message</a>
+                  <button type="button" class="btn btn-primary" onclick="sendMessage()">Send Message</button>
+                  <!-- <a type="button" id="form-submit" class="main-button" onclick="sendMessage()">Send Message</a> -->
                 </fieldset>
               </div>
             </div>
@@ -643,6 +638,10 @@
           <i class="bi bi-journal"></i>
           <span>Blog</span>
         </a>
+        <a href="./team.html" class="nav-link">
+          <i class="bi bi-journal"></i>
+          <span>Team</span>
+      </a>
       </div>
       <div class="col-lg-4 text-center">
 

@@ -81,29 +81,27 @@
           <p>If you have any questions, inquiries, or need a custom quote, feel free to contact us using the form below
             or via the provided contact details.</p>
           <ul class="list-unstyled">
-            <li><strong>Address:</strong> 123 Industry Lane, Maiduguri, Borno State, Nigeria</li>
-            <li><strong>Phone:</strong> +234 800 123 4567</li>
-            <li><strong>Email:</strong> info@maikarfiindustries.com</li>
+            <li><strong>Address:</strong> No. 6 Kano Jos/Road, Adjacent 33 Barrack Road,Morompti Maiduguri, Borno State, Nigeria</li>
+            <li><strong>Phone:</strong> +23480-3538-6080, +23480-2391-1808</li>
+            <li><strong>Email:</strong> maikarficonstruction54@gmail.com</li>
             <li><strong>Working Hours:</strong> Mon - Fri: 8:00 AM - 5:00 PM</li>
           </ul>
         </div>
         <div class="col-lg-6 mb-4">
-          <h2>Contact Form</h2>
+          <h2>Contact Form</h2><br>
           <form>
             <div class="mb-3">
-              <label for="name" class="form-label">Full Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email Address</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              <label for="name" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" placeholder="Enter your name" required>
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="5" placeholder="Your message here..."
+              <textarea class="form-control" id="bodymess" rows="5" placeholder="Your message here..."
                 required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
+           <div class="col-lg-12" style="text-align: right;">
+            <button type="button" class="btn btn-primary" onclick="sendMessage()">Send Message</button>
+           </div>
           </form>
         </div>
       </div>
@@ -112,15 +110,19 @@
         <div class="col-12">
           <h2>Find Us</h2>
           <div class="ratio ratio-16x9">
-            <iframe src="https://www.google.com/maps/embed?pb=123+Industry+Lane+Maiduguri+Borno+State+Nigeria"
-              style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
-            <!-- <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509437!2d144.9537353153184!3d-37.81720997975159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf57785f0f1ecf5e!2s123+Industry+Lane+Maiduguri+Borno+State+Nigeria!5e0!3m2!1sen!2s!4v1616454302426!5m2!1sen!2s" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy">
-              </iframe> -->
+
+            <!-- Location Map Section -->
+            <div id="location" class="py-5">
+              <div class="container">
+                <div class="ratio ratio-16x9">
+                  <a
+                    href="https://www.google.com/maps/place/MAIKARFI+METAL+CONSTRUCTION+LTD+(MAMECO)/@11.8445615,13.0479557,17z/data=!3m1!4b1!4m6!3m5!1s0x11049d94007a7285:0x94d7d1de045034a5!8m2!3d11.8445615!4d13.0479557!16s%2Fg%2F11j304zwxl?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D"><img
+                      src="./assets/images/maikarfi-map.png" style="max-width: 100%;" alt="location"></a>
+                  <!-- <iframe src="https://www.google.com/maps/place/MAIKARFI+METAL+CONSTRUCTION+LTD+(MAMECO)/@11.8445615,13.0479557,17z/data=!3m1!4b1!4m6!3m5!1s0x11049d94007a7285:0x94d7d1de045034a5!8m2!3d11.8445615!4d13.0479557!16s%2Fg%2F11j304zwxl?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -164,6 +166,10 @@
           <i class="bi bi-journal"></i>
           <span>Blog</span>
         </a>
+        <a href="./team.html" class="nav-link">
+          <i class="bi bi-journal"></i>
+          <span>Team</span>
+        </a>
       </div>
       <div class="col-lg-4 text-center">
 
@@ -191,14 +197,25 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 wow fadeIn">
+        <div class="col-lg-12">
           <p>© Copyright 2024 Maikarfi Construction Ltd. All Rights Reserved.</p>
         </div>
       </div>
     </div>
   </footer>
   <!-- footer section end -->
+  <script>
+    function sendMessage() {
+      let subject = $("#subject").val();
+      let body = $("#bodymess").val();
+      if (subject && body) {
+        window.location.assign(`mailto:maikarficonstruction54@gmail.com?subject=${subject}&body=${body}`)
+      } else {
+        alert('Enter subject and message')
+      }
 
+    }
+  </script>
   <!-- Scripts -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
