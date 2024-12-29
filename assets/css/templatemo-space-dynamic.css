@@ -179,7 +179,7 @@ body {
 .section-heading h2 {
   font-size: 30px;
   text-transform: capitalize;
-  color: #2a2a2a;
+  color: #03a4ed;;
   font-weight: 700;
   letter-spacing: 0.25px;
   position: relative;
@@ -797,7 +797,7 @@ preloader
     height: 16px;
     top: 12px;
     left: 15px;
-    background: #fe3f40;
+    background: #03a4ed;
     border-radius: 50%;
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -820,7 +820,7 @@ preloader
     width: 16px;
     height: 16px;
     margin-left: 16px;
-    background: #fe3f40;
+    background: #03a4ed;
     border-radius: 50%;
 }
 
@@ -948,7 +948,7 @@ About Us Style
   margin-top: 10px;
 }
 
-.about-us {
+.about-us .row {
   /* background-image: url(../images/about-bg.png); */
   background-image: url('../images/maikarfi-background.png');
   background-repeat: no-repeat;
@@ -1291,7 +1291,7 @@ contact
 --------------------------------------------- 
 */
 
-.contact-us {
+.contact-us .contact {
   padding: 80px 0px;
   background-image: url(../images/maikarfi-background.png);
   background-repeat: no-repeat;
@@ -1302,7 +1302,7 @@ contact
 .contact-us .section-heading h2,
 .contact-us .section-heading h2 em,
 .contact-us .section-heading h2 span {
-  color: #fff;
+  color: #03a4ed;
 }
 
 .contact-us .section-heading p {
