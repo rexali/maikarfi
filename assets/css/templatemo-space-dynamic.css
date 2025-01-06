@@ -179,7 +179,7 @@ body {
 .section-heading h2 {
   font-size: 30px;
   text-transform: capitalize;
-  color: #03a4ed;;
+  color: #321e77;
   font-weight: 700;
   letter-spacing: 0.25px;
   position: relative;
@@ -862,7 +862,7 @@ Banner Style
   width: 98px;
   height: 290px;
 }
-
+ 
 .main-banner .left-content {
   margin-right: 45px;
 }
@@ -950,17 +950,19 @@ About Us Style
 
 .about-us .row {
   /* background-image: url(../images/about-bg.png); */
-  background-image: url('../images/maikarfi-background.png');
+  /* background-image: url('../images/maikarfi-background.png'); */
+  background-color: #321e77;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  border-radius: 20px;
   padding: 70px 0px 60px 0px;
 }
-
+/* 
 .about-us .left-image {
   margin-right: 75px;
   float: left;
-}
+} */
 
 .about-us .services .item {
   margin-bottom: 30px;
@@ -1179,7 +1181,7 @@ Blog
 
 .our-blog .section-heading h2 {
   /* margin-right: 180px; */
-  text-align: center;
+  /* text-align: center; */
 }
 
 .our-blog .top-dec {
@@ -1293,16 +1295,18 @@ contact
 
 .contact-us .contact {
   padding: 80px 0px;
-  background-image: url(../images/maikarfi-background.png);
+  /* background-image: url(../images/maikarfi-background.png); */
+  background-color: #321e77;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  border-radius: 20px;
 }
 
 .contact-us .section-heading h2,
 .contact-us .section-heading h2 em,
 .contact-us .section-heading h2 span {
-  color: #03a4ed;
+  color: #321e77;;
 }
 
 .contact-us .section-heading p {
@@ -1477,13 +1481,13 @@ responsive
   #about {
     margin-top: 0px;
   }
-  .about-us {
+  /* .about-us {
     position: relative;
     background-image: none;
     padding: 0px;
   }
   .about-us .left-image {
-    margin-right: 10px;
+    margin-right: 5px;
     position: absolute;
     bottom: -220px;
     right: 0;
@@ -1492,15 +1496,14 @@ responsive
     text-align: center;
   }
   .about-us .services .item  {
-    background: rgb(17, 114, 149);
-    background: linear-gradient(105deg, rgb(66, 13, 165) 0%, rgb(17, 114, 149) 100%);
+    background-color: #321e77;
     padding: 30px;
     border-radius: 20px;
     display: inline-block;
   }
   .about-us .services .item .right-text {
     text-align: left;
-  }
+  } */
   .our-services {
     margin-top: 200px;
   }
@@ -1511,7 +1514,7 @@ responsive
   .our-services .section-heading h2,
   .our-services .section-heading p {
     margin-right: 0px;
-    text-align: center;
+    text-align: left;
   }
   .our-portfolio .section-heading h2 {
     margin: 0px 0px 20px 0px;
@@ -1527,7 +1530,7 @@ responsive
   }
   .our-blog .section-heading h2 {
     margin-right: 0px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 45px;
   }
   .our-blog .left-image .info .inner-content {
@@ -1547,7 +1550,7 @@ responsive
     padding: 120px 0px;
   }
   .contact-us .section-heading {
-    text-align: center;
+    text-align: left;
   }
   form#contact {
     margin-left: 0px;
